@@ -35,9 +35,33 @@ A simple weather forecast web application built with Go that displays current we
 - Go 1.21 or higher
 - Internet connection (for weather API calls)
 
-### Installation & Running
+### Installation
 
-1. Clone or navigate to the project directory
+#### Quick Install (Recommended for Users)
+
+Install directly from GitHub using Go's built-in installer:
+
+```bash
+# Install the latest version
+go install github.com/stblc/wttr-app@latest
+
+# Run the application
+wttr-app
+```
+
+Then open your browser and visit: `http://localhost:8080`
+
+**Note**: Make sure your `$GOPATH/bin` or `$HOME/go/bin` is in your system's PATH to run `wttr-app` from anywhere.
+
+#### Development Setup
+
+For developers who want to modify the code:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/stblc/wttr-app.git
+   cd wttr-app
+   ```
 2. Install dependencies:
    ```bash
    go mod tidy
@@ -110,7 +134,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ```
 MIT License
 
-Copyright (c) 2025 [Your Name]
+Copyright (c) 2025 stblc
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
